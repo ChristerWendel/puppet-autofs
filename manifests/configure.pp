@@ -7,7 +7,7 @@ class autofs::configure {
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    source => 'puppet:///modules/autofs/auto.master',
+    source  => 'puppet:///modules/autofs/auto.master',
   }
 
   file { '/etc/auto.master.d':

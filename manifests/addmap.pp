@@ -14,7 +14,7 @@
 
 define autofs::addmap($mountpoint, $options = '', $content = []) {
   file { "${title}.autofs":
-    path    => "/etc/auto.master.d/$title.autofs",
+    path    => "/etc/auto.master.d/${title}.autofs",
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
