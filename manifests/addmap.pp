@@ -10,7 +10,7 @@
 #   A string containing options for the map
 #
 # ["content"]
-#   An array of lines to be writen into the map
+#   An array of hashes to be writen into the map
 
 define autofs::addmap($mountpoint, $options = '', $content = []) {
   file { "${title}.autofs":
